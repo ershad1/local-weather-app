@@ -7,18 +7,23 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MaterialModule} from './material/material.module';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CitySearchComponent } from './city-search/city-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CurrentWeatherComponent
+    CurrentWeatherComponent,
+    CitySearchComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
